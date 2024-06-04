@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQUARES!!!!</title>
+    <style>
+        .pic {
+            width: 200px;
+            border-radius: 50px;
+        }
+
+        .square{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            position: relative;
+            animation-name: es1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        .square1{
+            background-color: red; 
+            animation-name: es1;
+            position: fixed;
+        }
+        .square2{
+            background-color: green;
+            animation-name: es2;
+            position: fixed
+        }
+
+        .square3{
+            background-color: blue; 
+            animation-name: es3;
+            position: fixed;
+        }
+        
+        .square4{
+            background-color: yellow;
+            animation-name: es4;
+            position: fixed
+        }
+        @keyframes es1 {
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:200px; top:0px;}
+            50%  {background-color:blue; left:200px; top:200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:red; left:0px; top:0px;}
+        }
+        @keyframes es2 {
+            0%   {background-color: green; left:200px; top:0px;}
+            25%  {background-color:red; left:200px; top:200px;}
+            50%  {background-color:yellow; left:0px; top:200px;}
+            75%  {background-color:blue; left:0px; top:0px;}
+            100% {background-color:green ; left:200px; top:0px;}
+        }
+
+        @keyframes es3 {
+            0%   {background-color:blue; left:200px; top:200px;}
+            25%  {background-color:green; left:0px; top:200px;}
+            50%  {background-color:red; left:0px; top:0px;}
+            75%  {background-color:yellow; left:200px; top:0px;}
+            100% {background-color:blue; left:200px; top:200px;}
+        }
+        @keyframes es4 {
+            0%   {background-color: yellow; left:0px; top:200px;}
+            25%  {background-color:blue; left:0px; top:0px;}
+            50%  {background-color:green; left:200px; top:0px;}
+            75%  {background-color:red; left:200px; top:200px;}
+            100% {background-color:yellow ; left:0px; top:200px;}
+        }
+    </style>
+
+    <h1>I love squares </h1>
+        <p>I just wanna see them move</p>
+        <img class = "pic" src="pictures/oldmanthumbsup.jpg">
+</head>
+<body>
+    <div class = "square square1"></div>
+    <div class = "square square2"></div>
+    <div class = "square square3"></div>
+    <div class = "square square4"></div>
+    
+
+</body>
+</html>
